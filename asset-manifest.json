@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Skynet4241/goit-react-hw-01-components/static/css/main.e750e978.css",
-    "main.js": "/Skynet4241/goit-react-hw-01-components/static/js/main.3879ff3e.js",
-    "index.html": "/Skynet4241/goit-react-hw-01-components/index.html",
-    "main.e750e978.css.map": "/Skynet4241/goit-react-hw-01-components/static/css/main.e750e978.css.map",
-    "main.3879ff3e.js.map": "/Skynet4241/goit-react-hw-01-components/static/js/main.3879ff3e.js.map"
+    "main.css": "/goit-react-hw-01-components/static/css/main.e750e978.css",
+    "main.js": "/goit-react-hw-01-components/static/js/main.3879ff3e.js",
+    "index.html": "/goit-react-hw-01-components/index.html",
+    "main.e750e978.css.map": "/goit-react-hw-01-components/static/css/main.e750e978.css.map",
+    "main.3879ff3e.js.map": "/goit-react-hw-01-components/static/js/main.3879ff3e.js.map"
   },
   "entrypoints": [
     "static/css/main.e750e978.css",
