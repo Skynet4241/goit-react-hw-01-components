@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import {
-  Wrap,
+  Block,
   ProfileWrap,
-  Image,
-  Title,
-  Text,
-  List,
-  Item,
-  SpanTitle,
-  SpanText,
+  ProfileImage,
+  ProfileTitle,
+  ProfileText,
+  ProfileList,
+  ProfileItem,
+  ProfileSpanTitle,
+  ProfileSpanText,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -21,29 +21,29 @@ export const Profile = ({
   },
 }) => {
   return (
-    <Wrap>
+    <Block>
       <ProfileWrap>
-        <Image src={avatar} alt={username} />
-        <Title>{username}</Title>
-        <Text>@{tag}</Text>
-        <Text>{location}</Text>
+        <ProfileImage src={avatar} alt={username} />
+        <ProfileTitle>{username}</ProfileTitle>
+        <ProfileText>@{tag}</ProfileText>
+        <ProfileText>{location}</ProfileText>
       </ProfileWrap>
 
-      <List>
-        <Item>
-          <SpanTitle>Followers</SpanTitle>
-          <SpanText>{followers}</SpanText>
-        </Item>
-        <Item>
-          <SpanTitle>Views</SpanTitle>
-          <SpanText>{views}</SpanText>
-        </Item>
-        <Item>
-          <SpanTitle>Likes</SpanTitle>
-          <SpanText>{likes}</SpanText>
-        </Item>
-      </List>
-    </Wrap>
+      <ProfileList>
+        <ProfileItem>
+          <ProfileSpanTitle>Followers</ProfileSpanTitle>
+          <ProfileSpanText>{followers}</ProfileSpanText>
+        </ProfileItem>
+        <ProfileItem>
+          <ProfileSpanTitle>Views</ProfileSpanTitle>
+          <ProfileSpanText>{views}</ProfileSpanText>
+        </ProfileItem>
+        <ProfileItem>
+          <ProfileSpanTitle>Likes</ProfileSpanTitle>
+          <ProfileSpanText>{likes}</ProfileSpanText>
+        </ProfileItem>
+      </ProfileList>
+    </Block>
   );
 };
 

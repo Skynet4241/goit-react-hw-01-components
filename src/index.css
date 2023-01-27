@@ -25,5 +25,7 @@ h3 {
 }
 
 body {
-  background-color: rgb(198, 221, 226);
+  padding: 20px;
+  margin: 0px auto;
+  width: 1170px;
 }

@@ -1,15 +1,13 @@
 import PropTypes from 'prop-types';
-import { IoEllipse } from 'react-icons/io5';
+import { FriendItem, FriendSpan } from './FriendsList.styled';
 
 export const FriendsItem = ({ data: { avatar, name, isOnline, id } }) => {
   return (
-    <li>
-      <span>
-        {isOnline} <IoEllipse />
-      </span>
+    <FriendItem>
+      <FriendSpan online={isOnline}>{isOnline}</FriendSpan>
       <img src={avatar} alt={name} width="48" />
       <p>{name}</p>
-    </li>
+    </FriendItem>
   );
 };
 
