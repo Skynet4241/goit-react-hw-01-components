@@ -1,12 +1,16 @@
 import PropTypes from 'prop-types';
+import {
+  TransactionsTableString,
+  TransactionsTableStringValue,
+} from './TransactionsList.styled';
 
 export const TransactionsItem = ({ data: { id, type, amount, currency } }) => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <TransactionsTableString>
+      <TransactionsTableStringValue>{type}</TransactionsTableStringValue>
+      <TransactionsTableStringValue>{amount}</TransactionsTableStringValue>
+      <TransactionsTableStringValue>{currency}</TransactionsTableStringValue>
+    </TransactionsTableString>
   );
 };
 

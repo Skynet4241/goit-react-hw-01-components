@@ -40,6 +40,10 @@ export const StatsItem = styled.li`
   font-family: 'Times New Roman', Times, serif;
   color: white;
   background-color: LightSkyBlue;
+  :hover {
+    transform: scale(1.1);
+  }
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   :nth-child(2) {
     background-color: BlueViolet;
   }

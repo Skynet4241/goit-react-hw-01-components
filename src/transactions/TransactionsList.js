@@ -1,13 +1,17 @@
 import { TransactionsItem } from './TransactionsItem';
+import {
+  TransactionsTable,
+  TransactionsTableTitle,
+} from './TransactionsList.styled';
 
 export const TransactionsList = ({ userTransactions }) => {
   return (
-    <table>
+    <TransactionsTable>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <TransactionsTableTitle>Type</TransactionsTableTitle>
+          <TransactionsTableTitle>Amount</TransactionsTableTitle>
+          <TransactionsTableTitle>Currency</TransactionsTableTitle>
         </tr>
       </thead>
       <tbody>
@@ -15,6 +19,6 @@ export const TransactionsList = ({ userTransactions }) => {
           <TransactionsItem key={item.id} data={item} />
         ))}
       </tbody>
-    </table>
+    </TransactionsTable>
   );
 };
